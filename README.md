@@ -51,12 +51,14 @@ flowchart TD
     H --> I
     
     subgraph I [Подготовка]
+        style I fill:none,stroke:#333,stroke-dasharray: 5 5
         J[Определение унарного минуса<br>замена - на ~]
     end
     
     I --> K
     
     subgraph K [Преобразование в RPN]
+        style K fill:none,stroke:#333,stroke-dasharray: 5 5
         direction TB
         K1[Инициализация<br>выходной очереди и стека] --> K2{Для каждого токена}
         K2 --> K3{Тип токена?}
